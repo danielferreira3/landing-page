@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="sortcut icon" href="assets/img/ee675db37fdbe7e73cd5bd3f8a4623c5.png" type="image/gif" />;
 
     <title>Grand Theft Auto V</title>
 </head>
@@ -31,13 +32,13 @@
                             class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-light" href="#compre">compre o jogo</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-light" href="#especificacoes">Especificações</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#compre">Compre o Jogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#comentario">Deixe seu comentario</a>
+                    <a class="nav-link text-light" href="#texto">Deixe seu comentario</a>
                 </li>
 
             </ul>
@@ -132,34 +133,11 @@
 
 
 
-
+        <h3 id="compre" class="d-flex justify-content-center text-light">Compre o jogo</h3>
 <div class="row mt-5">
-    <div class="col-md-6 text-light">
-        
-        
-        <h3 class="text-center" id="especificacoes"> Especificações </h3>
-        <hr class="bg-light ">
-        <p class="d-flex justify-content-center">Desenvolvedor Rockstar North</p>
-        <p class="d-flex justify-content-center">Plataforma  PS4, Xbox One, PC, PS3, Xbox 360</p>
-        <p class="d-flex justify-content-center"> Data de Lançamento  17 de setembro de 2013</p>
-        
     
+    <div class="row container-fluid d-flex justify-content-center col-md-6">
 
-    </div>
-
-    <div class="col-md-6">
-        <iframe class="embed-responsive" width="560" height="315" src="https://www.youtube.com/embed/Pk9KrNQLCm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </div>
-
-
-</div>
-
-<h3 id="compre" class="d-flex justify-content-center text-light">Compre o jogo</h3>
-<div class="row container-fluid d-flex justify-content-center">
-
-    
-    
         <div class="card bg-info" style="width: 18rem;">
             <img class="card-img-top" src="https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2018/11/59e5efeb5bafe304c4426c47.jpg"
             alt="imagem de compra do gta " width="100" 
@@ -183,13 +161,78 @@
             </div>
           </div>
     
-</div>
+    </div>
+
+    <div class="col-md-6">
+        <iframe class="embed-responsive" width="560" height="400" src="https://www.youtube.com/embed/Pk9KrNQLCm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+
 </div>
 
 
+
+<div class=" text-light mt-5">
+        
+        
+    <h3 class="text-center" id="especificacoes"> Especificações </h3>
+    <hr class="bg-light ">
+    <p class="d-flex justify-content-center">Desenvolvedor Rockstar North</p>
+    <p class="d-flex justify-content-center">Plataforma  PS4, Xbox One, PC, PS3, Xbox 360</p>
+    <p class="d-flex justify-content-center"> Data de Lançamento  17 de setembro de 2013</p>
+    
+
+
+</div>
+
+
+    <form>
+        <div class="form-group text-light">
+          <label for="exampleFormControlInput1">Nome</label>
+          <input type="nome" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
+          <div id="txtNome"></div>
+        </div>
+
+        <div class="form-group text-light">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+          </div>
+        
+        <div class="form-group text-light">
+          <label for="exampleFormControlTextarea1">Deixe seu comentario</label>
+          <textarea class="form-control" id="comentario" rows="3" onkeyup="validaComentario()"></textarea>
+          <div id="txtComentario"></div>
+        </div>
+      </form>
+      <button type="button" class="btn btn-outline-success" onclick="enviar()">Enviar</button>
+
+</div>
+
+<hr class="bg-light ">
+
+<footer >
+    <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/niiel.ferreira" target="_blank">
+            <img src="assets/img/face.gif" alt="foto logo do facebook" width=30px; height=30px;>
+        </a>
+        <a href="https://www.instagram.com/nielferreiraa/" target="_blank">
+            <img class="ml-2" src="assets/img/insta.jpg" alt="logo do instagram" width=30px; height=30px;>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-ferreira-60ab82200/" target="_blank">
+            <img class="ml-2"  src="assets/img/linkedim.png" alt="logo do linkedim" width=30px; height=30px;>
+        </a>
+    </div>
+
+    <p class="d-flex justify-content-center text-light">
+        Todos os direitos reservados: Daniel Ferreira &copy;
+    </p>
+</footer>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
